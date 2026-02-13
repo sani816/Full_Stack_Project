@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap');
+
+@layer base {
+  :root {
+    --background: 230 25% 9%;
+    --foreground: 220 15% 92%;
+
+    --card: 230 22% 13%;
+    --card-foreground: 220 15% 92%;
+
+    --popover: 230 22% 13%;
+    --popover-foreground: 220 15% 92%;
+
+    --primary: 270 65% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 230 18% 20%;
+    --secondary-foreground: 220 15% 85%;
+
+    --muted: 230 18% 17%;
+    --muted-foreground: 220 10% 55%;
+
+    --accent: 330 65% 58%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 160 55% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 40 90% 55%;
+    --warning-foreground: 30 10% 12%;
+
+    --border: 230 15% 20%;
+    --input: 230 15% 20%;
+    --ring: 270 65% 60%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 230 22% 11%;
+    --sidebar-foreground: 220 15% 85%;
+    --sidebar-primary: 270 65% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 230 18% 17%;
+    --sidebar-accent-foreground: 220 15% 85%;
+    --sidebar-border: 230 15% 20%;
+    --sidebar-ring: 270 65% 60%;
+
+    --font-heading: 'Instrument Serif', serif;
+    --font-body: 'DM Sans', sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: hsla(230, 22%, 13%, 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(270, 65%, 60%), hsl(330, 65%, 58%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glow-primary {
+    box-shadow: 0 0 20px -5px hsl(270 65% 60% / 0.35);
+  }
+
+  .glow-accent {
+    box-shadow: 0 0 20px -5px hsl(330 65% 58% / 0.35);
+  }
+}
