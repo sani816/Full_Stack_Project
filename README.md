@@ -4,7 +4,7 @@ A full-stack web application that automatically generates a personalized study t
 Instead of manually planning, the system intelligently distributes study sessions, revision days, and priorities to help students prepare efficiently.
 
 ---
-🔗 Live Demo: https://your-project-url.onrender.com
+🔗 Live Demo: (https://plan-my-grades.lovable.app)
 ## 🚀 Features
 
 * User Signup & Login (JWT Authentication)
